@@ -1,6 +1,6 @@
 # Description
-ALTK is a application that helps you insert unicode characters through macroses without changing your input method.
-ALTK uses numpad number keys (Numpad0, Numpad1 .. Numpad9) to insert decimal number and NumpadPlus key to convert the input into a character.
+ALTK is an utility that helps you insert unicode characters through macroses without changing your input method.
+ALTK uses numpad number keys (Numpad0, Numpad1 .. Numpad9) to insert decimal numbers into the buffer and NumpadPlus key to convert the input into a character.
 
 It can be illustrated so:
 ```
@@ -8,7 +8,7 @@ some text, (user presses Numpad9, Numpad5, Numpad5, NumpadPlus in a order)λ bla
 ```
 
 # Usage
-1. You need to disable the numpad keys, you can use this shell script for this:
+1. You need to disable the numpad keys, you can use this shell script:
 ```
 for i in 90 87 88 89 83 84 85 79 80 81 86; do
   xmodmap -e "keycode $i = "
